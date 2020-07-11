@@ -1,0 +1,930 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Info</title>
+
+  </head>
+  <body>
+        <style type="text/css">
+.main{
+   position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.g{
+  
+  display :block;
+  text-decoration: none;
+  margin:20px;
+  
+  
+}
+
+.d{
+
+  background-image:url('https://ameriabank.am/userfiles/image/retail/card_1.png');
+
+}
+.l{
+
+  width: 100px;  height: 70px;
+}
+/*the first button*/
+.a1{
+    position: relative;
+    background: linear-gradient(to right, #03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size:400%;
+    border-radius:30px;
+    
+    width: 110px;
+    height: 40px;
+    line-height:40px;
+    text-align:center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color:#fff;
+    font-size:20px;
+}
+.a1:hover{
+    animation:  a  8s linear Infinite;
+}
+.a1:before{
+   content:"";
+   background: linear-gradient(to   right,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size:400%;
+  position: absolute;
+  top:-5px;
+  right: -5px;
+  left: -5px;
+  bottom:-5px;
+  z-index: -1;
+  border-radius:40px;
+  filter: blur(20px);
+  opacity: 0;
+  transition:0.5s;
+}
+.a1:hover:before{
+  opacity: 1;
+  filter: blur(20px);
+  animation:  a  8s linear Infinite;
+}
+@keyframes a {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
+/*the second button*/
+.a2{
+    
+  position: relative;
+    width: 200px;
+    height: 60px;
+    line-height:60px;
+    text-align:center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color:#fff;
+    font-size:20px;
+    border:1px solid #fff;
+    border-radius:30px;
+    transition: all 0.5s ease  ;
+}
+.a2:before{
+   content:"";
+  position: absolute;
+  background: linear-gradient(to   right,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+   background-size:400%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 0%;
+  transition:all 0.6s ease  ;
+  z-index: -1;
+  border-radius:30px;
+}
+.a2:after{
+   content:"";
+   background: linear-gradient(to   right,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size:400%;
+  position: absolute;
+  top:-5px;
+  right: -5px;
+  left: -5px;
+  bottom:-5px;
+  z-index: -1;
+  border-radius:40px;
+  filter: blur(20px);
+  opacity: 0;
+  transition:0.5s;
+}
+.a2:hover{
+  border:1px solid transparent;
+}
+.a2:hover:before{
+    height: 100%;
+  animation:  a 8s linear Infinite;
+}
+.a2:hover:after{
+    opacity: 1;
+  filter: blur(20px);
+  animation:  a  8s linear Infinite;
+}
+/*the third button*/
+.a3{
+     
+  position: relative;
+    width: 200px;
+    height: 60px;
+    line-height:60px;
+    text-align:center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color:#fff;
+    font-size:20px;
+    border:1px solid #fff;
+    border-radius:30px;
+    transition: all 0.5s ease  ;
+}
+.a3:before{
+  content:"";
+  position: absolute;
+  background: linear-gradient(to   right,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+   background-size:400%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 0%;
+  height: 100%;
+  transition:all 0.6s ease  ;
+  z-index: -1;
+  border-radius:30px;
+}
+.a3:after{
+   content:"";
+   background: linear-gradient(to   right,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size:400%;
+  position: absolute;
+  top:-5px;
+  right: -5px;
+  left: -5px;
+  bottom:-5px;
+  z-index: -1;
+  border-radius:40px;
+  filter: blur(20px);
+  opacity: 0;
+  transition:0.5s;
+}
+.a3:hover{
+  border:1px solid transparent;
+}
+.a3:hover:before{
+    width: 100%;
+  animation:  a 8s linear Infinite;
+}
+.a3:hover:after{
+    opacity: 1;
+  filter: blur(20px);
+  animation:  a  8s linear Infinite;
+}
+/*the fourth button*/
+.a4{
+  overflow: hidden;    
+  position: relative;
+    width: 110px;
+    height: 40px;
+    line-height:40px;
+    text-align:center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color:#fff;
+    font-size:20px;
+    border:1px solid #fff;
+    border-radius:30px;
+    transition: all 0.5s ease  ;
+}
+.a4:before{
+ 
+  content:"";
+  position: absolute;
+  background: linear-gradient(to   right,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+   background-size:400%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 100%;
+  height: 0%;
+  transition:all 0.6s ease  ;
+  z-index: -1;
+  border-radius:30px;
+  
+}
+.a4:after{
+   content:"";
+   background: linear-gradient(to   right,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size:400%;
+  position: absolute;
+  top:-5px;
+  right: -5px ;
+  left: -5px ;
+  bottom:-5px ;
+  z-index: -1;
+  border-radius:40px;
+  filter: blur(20px);
+  opacity: 0;
+  transition:0.5s;
+  
+}
+.a4:hover{
+  border:1px solid transparent;
+}
+.a4:hover:before{
+   height: 300%;
+  animation:  a 8s linear Infinite;
+}
+.a4:hover:after{
+    opacity: 1;
+  filter: blur(20px);
+  animation:  a  8s linear Infinite;
+}
+/*the fifth button*/
+.a5{
+  overflow: hidden;    
+  position: relative;
+    width: 110px;
+    height: 40px;
+    line-height:40px;
+    text-align:center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color:#fff;
+    font-size:20px;
+    border:1px solid #fff;
+    border-radius:30px;
+    transition: all 0.5s ease  ;
+
+}
+.a5:before{
+ 
+  content:"";
+  position: absolute;
+  background: linear-gradient(to   right,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+   background-size:400%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 0%;
+  transition:all 0.6s ease  ;
+  z-index: -1;
+  border-radius:30px;
+  
+}
+.a5:after{
+   content:"";
+   background: linear-gradient(to   right,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+  background-size:400%;
+  position: absolute;
+  top:-5px;
+  right: -5px ;
+  left: -5px ;
+  bottom:-5px ;
+  z-index: -1;
+  border-radius:40px;
+  filter: blur(20px);
+  opacity: 0;
+  transition:0.5s;
+  
+}
+.a5:hover{
+  border:1px solid transparent;
+}
+.a5:hover:before{
+   height: 300%;
+  animation:  a 8s linear Infinite;
+}
+.a5:hover:after{
+    opacity: 1;
+  filter: blur(20px);
+  animation:  a  8s linear Infinite;
+}</style>
+<div class="container-fluid">
+  <div class="row table-secondary rounded font-weight-bold text-primary align-items-center">
+    <div class="col-lg-1 d-none d-md-block"><img src="https://png.pngtree.com/element_our/md/20180509/md_5af2d4cf61c21.jpg" width="40" height="40"></div>
+    <div class="col-lg-3 col-md-3 d-none d-md-block">
+      Telephone:777777777
+    </div>
+    <div class="col-lg-2 col-md-2 d-none d-md-block">
+     Welcome To Our Store
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+   
+<div class="input-group mb-3 ">
+  <div class="input-group-prepend">
+    
+  </div>
+  <select class="custom-select font-weight-bold rounded " id="inputGroupSelect01 " >
+    <option selected class="font-weight-bold rounded">En</option>
+    <option value="1" class="font-weight-bold rounded">Ru</option>
+    <option value="2" class="font-weight-bold rounded">Am</option>
+    
+  </select>
+
+
+
+
+
+</div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-6 col-6">
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend  ">
+    
+  </div>
+  <select class="custom-select font-weight-bold rounded " id="inputGroupSelect01">
+    <option selected class="font-weight-bold ">$</option>
+    <option value="1" class="font-weight-bold ">€</option>
+    <option value="2" class="font-weight-bold ">֏</option>
+   
+  </select>
+</div>
+    </div>
+    <div class="col-lg-2 col-md-2 d-none d-md-block">
+     <button type="button" class="btn btn-dark">Wishlist
+<span class="badge badge-primary">7</span>
+     </button>
+    </div>
+   
+  </div>
+
+
+
+
+<div class="row bg-dark" >
+  <div class="col-lg-3 col-md-3 col-sm-6 col-6">
+  <a  href="#"><img src="https://icons-for-free.com/iconfiles/png/512/shop-131979038701198726.png" width="50" height="50"></a></div>
+   <div class="col-lg-3 col-md-3 d-none "> </div>
+  <div class="col-lg-3 mt-1  col-md-3 d-none d-md-block  ">
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0  " type="submit">Search</button> </div>
+       <div class="col-lg-3 col-md-3  col-sm-6 col-6">
+
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          My account
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" data-toggle="modal" data-target="#login" href="#"  >login</a>
+          <a class="dropdown-item" data-toggle="modal" data-target="#login1" href="#">register</a>
+          <a class="dropdown-item" href="#">my Orders</a>
+  
+          <a class="dropdown-item" href="#" target="_blank">Account settings</a>
+        </div>
+      </li>
+    </div>
+
+</div>
+
+
+<div class="modal" id="login" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body bg-dark">
+        <form >
+        <div class="form-group">
+          <label class="  text-primary" for="exampleInputEmail1 text-primary">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="form-group">
+          <label class="  text-primary" for="exampleInputPassword1 text-primary">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        
+        <button type="submit" class="btn btn-primary   text-dark">Log in</button>
+      </form>
+      </div>
+      <div class="modal-footer">
+      
+      </div>
+    </div>
+  </div>
+</div>
+     
+
+
+
+
+
+
+
+     <div class="modal" id="login1" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body bg-dark">
+        <form >
+        <div class="form-group">
+          <label class="  text-primary" for="exampleInputEmail1 text-primary">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="form-group">
+          <label class="  text-primary" for="exampleInputEmail1 text-primary">Name</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="form-group">
+          <label class="  text-primary" for="exampleInputEmail1 text-primary">Surname</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          
+        </div>
+        <div class="form-group">
+          <label class="  text-primary" for="exampleInputPassword1 text-primary">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        
+        <button type="submit" class="btn btn-primary   text-dark">Register</button>
+      </form>
+      </div>
+      <div class="modal-footer">
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">   
+            <nav class="text-center text-primary align-items-center navbar navbar-expand-lg navbar-dark bg-dark font-weight-bold col-md-12 border border-primary ">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNabg-darkropdown" aria-controls="navbarNabg-darkropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse navbar-dark bg-dark text-primary" id="navbarNabg-darkropdown">
+    <ul class="navbar-nav mr-auto ml-auto  bg-dark text-primary ">
+         <li class="nav-item dropdown text-center mr-5 border border-primary rounded">
+        <a class="nav-link dropdown-toggle  text-primary border-primary" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+          Smartphone
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item bg-dark  text-primary" href="shop.html" target="_blank">Samsung</a>
+          <a class="dropdown-item bg-dark  text-primary" href="shop.html" target="_blank">Iphone</a>
+          <a class="dropdown-item bg-dark  text-primary" href="shop.html" target="_blank">Xiaomi</a>
+        </div>
+      </li>
+
+           
+         <li class="nav-item dropdown text-center  mr-5 ml-5 border border-primary rounded ">
+        <a class="nav-link dropdown-toggle  text-primary" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+          Accessories
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item bg-dark  text-primary" href="shop.html" target="_blank">Earphone</a>
+          <a class="dropdown-item bg-dark  text-primary" href="shop.html" target="_blank">Case</a>
+          <a class="dropdown-item bg-dark  text-primary" href="shop.html" target="_blank">Charger</a>
+        </div>
+      </li>
+
+
+
+         <li class="nav-item dropdown text-center  mr-5 ml-5 border border-primary rounded">
+        <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+          PC
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item bg-dark text-primary" href="shop.html" target="_blank">PC</a>
+          <a class="dropdown-item bg-dark text-primary" href="shop.html" target="_blank">Notebook</a>
+          <a class="dropdown-item bg-dark text-primary" href="shop.html" target="_blank">Imac</a>
+        </div>
+      </li>
+
+
+
+         <li class="nav-item dropdown text-center  mr-5 ml-5 border border-primary rounded">
+        <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+          Planshets
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item bg-dark text-primary" href="shop.html" target="_blank">Samsung</a>
+          <a class="dropdown-item bg-dark text-primary" href="shop.html" target="_blank">Ipad</a>
+          <a class="dropdown-item bg-dark text-primary" href="shop.html" target="_blank">Mipad</a>
+        </div>
+      </li>
+
+
+
+         <li class="nav-item dropdown text-center  mr-5 ml-5 border border-primary rounded">
+        <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+          Other
+        </a>
+        <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item bg-dark text-primary" href="shop.html" target="_blank">VR</a>
+          <a class="dropdown-item bg-dark text-primary" href="shop.html" target="_blank">JBL</a>
+          <a class="dropdown-item bg-dark text-primary" href="shop.html" target="_blank">POwerBank</a>
+        </div>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+        </div>
+      </div>
+<div class="container-fluid">
+<div class="row">
+        <div class="col-md-12 col-12    pt-2 bg-dark text-dark   ">
+<nav aria-label="breadcrumb ">
+    <ol class="breadcrumb text-primary bg-dark border border-primary">
+    <li class="breadcrumb-item"><a class="text-decoration-none " href="index.html" target="_blank">Home</a></li>
+    <li class="breadcrumb-item"><a class="text-decoration-none " href="#">My Account</a></li>
+      <li class="breadcrumb-item  "><a class="text-decoration-none " href="#">Account settings</a></li>
+       <li class="breadcrumb-item"><a class="text-decoration-none " href="#">Account Info</a></li>
+     
+  </ol>
+</nav>
+</div>
+</div>
+<div class="row font-weight-bold bg-dark  ">
+  <div class="col-2 bg-dark border border-primary rounded ml-3 ">
+<div class="row" style="height: 340px;">
+  
+<ul>
+  <li><a href="accountsetings.html"target="_blank">Dashboard</a></li>
+<li><a href="#" >Account Info</a></li>
+<li><a href="order.html" target="_blank">Order Hitstory</a></li>
+
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+<div class="col-1 text-dark">rtui</div>
+<div class="col-8 bg-dark ">
+<div class="row">
+  
+
+<div class="col-12 border border-primary rounded text-center text-primary">
+  My Account
+</div>
+
+<div class="col-12 border border-primary rounded mt-1">
+  
+  
+
+<div class="row  font-weight-bold ">
+  
+ <div class="col-12">
+
+  <div class="row">
+  
+<div class="col-12"><h4 class="font-weight-bold text-primary text-center">Account Details</h4></div> 
+   <div class="col-5 mt-3 mb-3">
+<div class="row">
+<div class="col-7"><p class="text-primary">Name-Gor</p></div>
+ <div class="col-7"><p class="text-primary">Surname-Topsakalyan</p></div>
+
+<div class="col-7"><p class="text-primary">Email-Gor@gmail.com</p></div>
+</div>
+</div>
+<div class="col-7 mt-3 mb-3">
+<div class="row">
+<div class="input-group flex-nowrap col-9 border border-dark ">
+  
+  <input type="text" class="form-control " placeholder="Name" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+
+<div class="input-group flex-nowrap col-9 border border-dark">
+ 
+  <input type="text" class="form-control" placeholder="Surname" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+
+<div class="input-group flex-nowrap col-9 border border-dark">
+  
+  <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="addon-wrapping">
+</div>
+</div>
+</div>
+<div class="col-12 text-center "><div class="main mt-4"  style="margin-left: 120px;">
+    <a href="#" class="a4 g">Change</a>
+    
+</div></div>
+<div class="col-5  mb-3" style="margin-top: 60px;">
+<div class="row">
+<div class="col-7"><p class="text-primary">Name-Gor</p></div>
+ <div class="col-7"><p class="text-primary">Surname-Topsakalyan</p></div>
+
+<div class="col-7"><p class="text-primary">Email-Gor@gmail.com</p></div>
+</div>
+</div>
+<div class="col-7  mb-3" style="margin-top: 60px;">
+<div class="row">
+<div class="input-group flex-nowrap col-9 border border-dark ">
+  
+  <input type="password" class="form-control " placeholder="Current Password" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+
+<div class="input-group flex-nowrap col-9 border border-dark">
+ 
+  <input type="password" class="form-control" placeholder="New Password" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+
+<div class="input-group flex-nowrap col-9 border border-dark">
+  
+  <input type="password" class="form-control" placeholder="Confirm New Password" aria-label="Email" aria-describedby="addon-wrapping">
+</div>
+</div>
+</div>
+<div class="col-12 text-center mb-5"><div class="main mt-4 " style="margin-left: 120px;">
+    <a href="#" class="a5 g">Change</a></div>
+</div>
+
+
+</div>
+
+
+<div class="row">
+  <div class="col-12 border-top border-primary "><h4 class="text-center text-primary font-weight-bold">Adresses</h4></div>
+
+  <div class="col-12 mb-5"> <div class="accordion" id="accordionExample">
+  <div class="card bg-dark text-primary  border border-primary">
+    <div class="card-header d-flex " id="headingOne">
+      <div class="mr-2"><h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left font-weight-bold btn-primary text-light" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+       Billing address
+        </button>
+      </h2></div> 
+      <div><h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed font-weight-bold text-light btn-primary" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Shipping address
+        </button>
+      </h2></div>
+      
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body bg-dark text-primary  border border-primary">
+       <div class="row">
+         <div class="col-12"><h5 class="font-weight-bold text-center">Billing Address</h5></div>
+<div class="input-group flex-nowrap col-12 col-md-3 border-bottom border-primary">
+  
+  <input type="text" class="form-control bg-dark border-dark" placeholder="State/Province
+*" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div class="col-1 d-none d-md-block"></div>
+
+<div class="input-group flex-nowrap col-12 col-md-3 border-bottom border-primary">
+  
+  <input type="text" class="form-control bg-dark border-dark" placeholder="Country*" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div class="col-1 d-none d-md-block"></div>
+<div class="input-group flex-nowrap col-12 col-md-3 border-bottom border-primary bg-dark">
+  
+  <input type="text" class="form-control bg-dark border-dark" placeholder="City*" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+
+<div class="input-group flex-nowrap col-12 col-md-4 border-bottom border-primary mt-md-5">
+  
+  <input type="text" class="form-control bg-dark border-dark" placeholder="
+Zip/Postal Code *
+" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+<div class="col-1 d-none d-md-block"></div>
+
+<div class="input-group flex-nowrap col-12 col-md-6 border-bottom border-primary mt-md-5">
+
+  <input type="text" class="form-control bg-dark border-dark" placeholder="Address (street, apartment, suite, unit etc.) *
+
+" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+
+
+
+
+
+
+
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="card bg-dark text-primary ">
+    
+    <div id="collapseTwo" class="collapse border border-primary" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        <div class="row">
+         <div class="col-12"><h5 class="font-weight-bold text-center">Shipping Address</h5></div>
+<div class="input-group flex-nowrap col-12 col-md-3 border-bottom border-primary">
+  
+  <input type="text" class="form-control bg-dark border-dark" placeholder="State/Province
+*" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div class="col-1 d-none d-md-block"></div>
+
+<div class="input-group flex-nowrap col-12 col-md-3 border-bottom border-primary">
+  
+  <input type="text" class="form-control bg-dark border-dark" placeholder="Country*" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div class="col-1 d-none d-md-block"></div>
+<div class="input-group flex-nowrap col-12 col-md-3 border-bottom border-primary bg-dark">
+  
+  <input type="text" class="form-control bg-dark border-dark" placeholder="City*" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+
+<div class="input-group flex-nowrap col-12 col-md-4 border-bottom border-primary mt-md-5">
+  
+  <input type="text" class="form-control bg-dark border-dark" placeholder="
+Zip/Postal Code *
+" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+<div class="col-1 d-none d-md-block"></div>
+
+<div class="input-group flex-nowrap col-12 col-md-6 border-bottom border-primary mt-md-5">
+
+  <input type="text" class="form-control bg-dark border-dark" placeholder="Address (street, apartment, suite, unit etc.) *
+
+" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+
+
+
+
+
+
+
+       </div>
+      </div>
+    </div>
+  </div>
+ 
+</div></div>
+</div>
+
+
+
+
+
+
+<div class="row">
+  <div class="col-12 border-top border-primary "><h4 class="text-center text-primary font-weight-bold">Payment Options</h4></div>
+<div class=" mx-auto  p-3 my-3" style="width: 280px; border-radius: 10px; border:3px solid #000">
+
+       <samp class="h6 d-block text-right m-0 font-weight-bold text-primary">CREDIT CARD #1</samp>
+       <div class="d-flex"><div> <img src="data:image/png;base64,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" class="img-fluid l "></div ><div class="ml-5 mt-2 text-primary">Walid Thru</div>
+      <div><input type="text" class="form-control mt-3 ml-2  border border-dark w-75" id="exampleInputPassword1" placeholder="First Card Number" value="Month"></div>
+</div>
+<br>
+
+       <img src="data:image/png;base64,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" class="img-fluid w-25">
+
+
+       <img src="https://s1.iconbird.com/ico/2013/7/392/w256h1641373272952MasterCardPaymentIcon.png" class="img-fluid w-25">
+      <img src="https://cabinet.arca.am/img/fb-share.png" class="img-fluid w-25">
+     
+         <input type="text" class="form-control mt-2  border border-dark" id="exampleInputPassword1" placeholder="First Card Number" value="7777 7777 7777 7777">
+       
+       
+
+
+     </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+</div>
+       <div class="container-fluid bg-dark text-primary ">
+    <div class="row text-center b25 text-light text-uppercase ">
+      <div class="col-12 col-md">
+        <a href="" class="nav-link   h5 text-uppercase text-primary">contact us</a> 
+      </div>
+      <div class="col-12 col-md">
+        <a href="" class="nav-link   h5 text-uppercase text-primary">Live chat</a> 
+      </div>
+       <div class="col-12 col-md ">
+          <a href="" class="nav-link  h5 text-uppercase text-primary">shipping</a>
+      </div>
+       <div class="col-12 col-md ">
+          <a href="" class="nav-link  h5 text-uppercase text-primary">term & conditions</a> 
+      </div>
+       
+    </div>
+
+    <div class="row  text-center">
+     
+     
+     
+      
+       <div class="col d-none d-md-block  ">
+        <ul class="list-group list-group-flush rounded-bottom">
+          <li class="list-group-item text-light bg-dark font-weight-bold"><a href="" class="text-decoration-none text-light">Social Media</a></li>
+          <li class="list-group-item text-light bg-dark border-top  border-dark"><a href="" class="text-decoration-none  text-primary">Facebook</a></li>
+          <li class="list-group-item text-light bg-dark border-bottom  border-dark"><a href="" class="text-decoration-none  text-primary">Instagram</a></li>
+          <li class="list-group-item text-light bg-dark border-bottom   border-dark"><a href="" class="text-decoration-none  text-primary">Youtube</a></li>
+          
+      </div>
+       <div class="col d-none d-md-block">
+        <ul class="list-group list-group-flush rounded-bottom">
+          <li class="list-group-item text-light bg-dark font-weight-bold"><a href="" class="text-decoration-none text-light">Events</a></li>
+          <li class="list-group-item text-light  bg-dark border-top  border-dark"><a href="" class="text-decoration-none  text-primary">Blogs</a></li>
+          <li class="list-group-item text-light  bg-dark  border-bottom  border-dark"><a href="" class="text-decoration-none  text-primary">News</a></li>
+          <li class="list-group-item text-light  bg-dark  border-bottom  border-dark"><a href="" class="text-decoration-none  text-primary">Publications</a></li>
+
+        </ul>
+      </div>
+       <div class="col d-none d-md-block">
+        <ul class="list-group list-group-flush rounded-bottom">
+          <li class="list-group-item text-light bg-dark font-weight-bold"><a href="" class="text-decoration-none text-light">Other</a></li>
+          
+          <li class="list-group-item text-light  bg-dark  border-top border-dark"><a href="" class="text-decoration-none  text-primary">Message</a></li>
+          <li class="list-group-item text-light  bg-dark  border-bottom  border-dark"><a href="" class="text-decoration-none  text-primary">About Us</a></li>
+          <li class="list-group-item text-light  bg-dark  border-bottom  border-dark"><a href="" class="text-decoration-none  text-primary">Discord</a></li>
+        </ul>
+      </div>
+       <div class="col d-none d-md-block">
+        <ul class="list-group list-group-flush rounded-bottom">
+          <li class="list-group-item text-light bg-dark font-weight-bold"><a href="" class="text-decoration-none text-light">conditions</a></li>
+          <li class="list-group-item text-light  bg-dark border-top  border-dark"><a href="" class="text-decoration-none  text-primary">Privacy & Policy</a></li>
+          <li class="list-group-item text-light  bg-dark  border-bottom  border-dark"><a href="" class="text-decoration-none  text-primary">Returns & Shipping</a></li>
+          <li class="list-group-item text-light  bg-dark  border-bottom  border-dark"><a href="" class="text-decoration-none  text-primary">History</a></li>
+         
+        </ul>
+      </div>
+      
+
+    </div>
+
+    <div class="row b25 text-light">
+      <div class="col-12 text-center pt-3 pb-1">
+        <a href="#"> <img  class=" mr-2 ml-2" src="https://seeklogo.com/images/F/facebook-icon-circle-logo-09F32F61FF-seeklogo.com.png" loading="lazy" width="30" height="30"></a>
+       <a href="#"><img  class=" mr-2 ml-2" src="https://i1.wp.com/www.fashionrevolution.org/wp-content/uploads/2019/07/kisspng-social-media-marketing-youtube-instagram-photograp-instagram-logo-icon-png-5b875849ea5482.8768584615355966179598.png?fit=512%2C512&ssl=1" loading="lazy" width="30" height="30"></a>
+        <a href="#"><img  class=" mr-2 ml-2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/YouTube_social_white_circle_%282017%29.svg/1200px-YouTube_social_white_circle_%282017%29.svg.png"  loading="lazy" width="30" height="30"></a>
+        
+        
+      </div>
+      <div class="col-12 text-center pt-1 pb-3">
+        &copy; Gor Topsakalyan
+      </div>
+    </div>
+  </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
